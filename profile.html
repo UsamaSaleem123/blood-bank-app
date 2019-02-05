@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOGIN</title>
+    
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+        <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+            <script>
+            var config = {
+                apiKey: "AIzaSyCl63Ga2_dZLQnXVLN8vN05bTlTwIPVHlo",
+                authDomain: "authentication-todoapp.firebaseapp.com",
+                databaseURL: "https://authentication-todoapp.firebaseio.com",
+                projectId: "authentication-todoapp",
+                storageBucket: "authentication-todoapp.appspot.com",
+                messagingSenderId: "676313978370"
+                };
+                firebase.initializeApp(config);
+            </script>
+
+    
+</head>
+<body>
+    <nav  class="navbar navbar-dark bg-dark">
+        
+        <a href="home.html" class="fa fa-home btn btn-outline-secondary"role="button" aria-pressed="true">HOME</a>
+    <a class="navbar-brand"style="color:#7e0202;font-size: 25px" ><img style="width:100px; height: 30px; margin: 0px; padding: 0px; margin-right: 5px; margin-left: 5px;"
+        id="imgS" src="blood.gif">BANK</a>
+    
+    
+
+    <form class="form-inline">
+        <a href="profile.html"class="reg" id="username"></a>&nbsp;
+        <a href="login.html"class="reg" id="loginfirst"></a>&nbsp;
+              <a onclick="Logout();" class="btn btn-outline-secondary" role="button" aria-pressed="true">LOGOUT</a>
+      
+    </form>
+  </nav>
+  <br>
+  <h1 style= "color:#7e0202;font-weight: bold;">DONATE YOUR BLOOD <br>AND<br> SAVES LIFES</h1>
+    <div style="margin:auto;margin-top:60px;" class= "container-fluid col-md-4 main-section">
+        <div class= "row">
+            <div id= "main"class= "col-md-12">
+                <h1 class= "text-center">USER INFO</h1>
+                <br>
+                <h4 id="first" style="color:whitesmoke;"></h4>
+                <br>
+                <h4 id="name" style="color:whitesmoke;"></h4>
+                <br>
+                <h4 id="cityname" style="color:whitesmoke;"></h4>
+                <br>
+                <h4 id="email" style="color:whitesmoke;"></h4>
+                <br>
+                <h4 id="education" style="color:whitesmoke;"></h4>
+                <br>
+                <h4 id="contact" style="color:whitesmoke;"></h4>
+                <br>
+                <h4 id="gender" style="color:whitesmoke;"></h4>
+                <br>
+                <button style="margin-right:10px;margin-bottom:10px;"class="btn btn-outline-secondary btn-block" onclick="back()"><i class="fa fa-spinner fa-spin fasad"style="display: none;" id="load"></i>BACK <i class="fas fa-sign-in-alt"></i></button>
+            </div>
+        </div>
+    </div>
+        <footer style="margin-bottom:0px;margin-top:50px;background-color:rgb(52, 58, 64)">
+                <h5 style="color:whitesmoke;text-align:center; padding-top:20px;font-weight:bold"><i class="far fa-copyright"></i> Copyright : all Right Reserved.</h5>
+        </footer>
+      
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="login.js"></script>
+    <script src="profile.js"></script>
+    <script src="auth.js"></script>
+
+</body>
+</html>

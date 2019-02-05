@@ -1,0 +1,49 @@
+body{
+  padding: 0px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: bold;
+    color:whitesmoke;
+    background-color:whitesmoke;
+
+   
+    
+   
+}
+.loader {
+    border-top: 16px solid blue;
+    border-bottom: 16px solid blue;
+  }
+h1,h3,h4{
+    font-weight: bold;
+    text-align: center
+    
+}
+.main-section{    
+    border:solid;
+    border-radius: 20px;
+    border-color: darkgray;
+    background-color: rgb(12, 12, 12);
+    opacity: 0.9;
+        
+}
+
+/* #bg{
+    background-image: url("add.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+/* } */
+
+    
+#donorForm{    
+    border:solid;
+    border-radius: 20px;
+    border-color: darkgray;
+    background-color: rgb(0, 0, 0);
+    opacity: 1.0;
+        
+}
+  

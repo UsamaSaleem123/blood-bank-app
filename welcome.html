@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WELCOME</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+        <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+            <script>
+            var config = {
+                apiKey: "AIzaSyCl63Ga2_dZLQnXVLN8vN05bTlTwIPVHlo",
+                authDomain: "authentication-todoapp.firebaseapp.com",
+                databaseURL: "https://authentication-todoapp.firebaseio.com",
+                projectId: "authentication-todoapp",
+                storageBucket: "authentication-todoapp.appspot.com",
+                messagingSenderId: "676313978370"
+                };
+                firebase.initializeApp(config);
+            </script>
+
+
+</head>
+<body>
+      
+
+  <nav  class="navbar navbar-dark bg-dark">
+        
+    <a href="home.html" class="fa fa-home btn btn-outline-secondary" role="button" aria-pressed="true">HOME</a>
+<a class="navbar-brand"style="color:#7e0202;font-size: 25px" ><img style="width:100px; height: 30px; margin: 0px; padding: 0px; margin-right: 5px; margin-left: 5px;"
+    id="imgS" src="blood.gif">BANK</a>
+
+
+
+<form class="form-inline">
+  <a href="profile.html"class="reg" id="username"></a>&nbsp;
+  <a href="login.html"class="reg" id="loginfirst"></a>&nbsp;
+        <a onclick="Logout();" class="btn btn-outline-secondary" role="button" aria-pressed="true">LOGOUT</a>
+
+</form>
+</nav> 
+<br>
+<br>
+   
+<img src="donate now.png" class="rounded mx-auto d-block" alt="please wait"><br><br>
+<h1 style= "color:#7e0202;font-weight: bold;">THANK YOU  <br>FOR<br> CHOSSING US</h1>
+  </div>
+  <section id="choose" class="my-5 pt-5 text-center">
+  <div class="row justify-content-around">
+                            
+    <div id="chooseAccepter" onclick="location.href='./acceptor.html';" style="cursor: pointer;" class="py-2 col-lg-4 col-md-6 col-sm-12">
+      <div style="background:rgb(32, 32, 32);"  class="card">
+        <div class="card-block">
+                   <img style="background:transparent; height: 100px;width: 150px;" aria-hidden="true" class="img-fluid rounded mx-auto d-block" src="accepter.jpg" alt="">
+           <h3 style= "color:whitesmoke;font-weight: bold;">Accepter</h3>
+          <p style= "color:whitesmoke;font-weight: bold;text-align:center">Find a donor for your needs.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="chooseDonor" onclick="location.href='./donor.html';" style="cursor: pointer;" class="py-2 col-lg-4 col-md-6 col-sm-12">
+      <div style="background:rgb(32, 32, 32);" class="card">
+        <div class="card-block">
+          
+          <img style="background:grey; height: 100px; width: 150px;" aria-hidden="true" class="img-fluid rounded mx-auto d-block" src="donor.jpg" alt="">
+          <h3 style= "color:whitesmoke;font-weight: bold;">Donor</h3>
+          <p style= "color:whitesmoke;font-weight: bold; text-align:center;">Donate and save lives. </p>
+        </div>
+      </div>
+    </div> 
+  </section>
+        <footer style="margin-bottom:0px;margin-top:50px;background-color:rgb(52, 58, 64)">
+                <h5 style="color:whitesmoke;text-align:center; padding-top:20px;font-weight:bold"><i class="far fa-copyright"></i> Copyright : all Right Reserved.</h5>
+        </footer>
+        
+           <script src="bootstrap/js/bootstrap.min.js"></script>
+            <script src="login.js"></script>
+            <script src="auth.js"></script>
+            <!-- <script src="app.js"></script> -->
+</body>
+</html>
